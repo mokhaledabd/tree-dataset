@@ -26,7 +26,7 @@ print(std)
 
 v<-var(trees$Girth)
 print(v)
-############################################
+
 hist(trees$Girth,xlab="Girth column",col="Red",main="Trees GrithHistogram",breaks = 10)
 boxplot(trees$Girth,col=rainbow(6),ylab="box plot of Girth ")
 
@@ -36,13 +36,7 @@ xlap<-paste(xlap,"=","[",z,"]")
 xlap<-paste(xlap,sep=" ")
 pie(z,labels = xlap)
 
-
 barplot(trees$Girth,col=rainbow(6),main="bar chart of Girth column")
-
-
-
-###########################################################
-
 #cor.test(trees$Girth,trees$Height,method = "pearson")
 #cor(trees$Girth,trees$Height,method = "pearson")
 cor(trees[,1:3])
@@ -62,36 +56,8 @@ var
 #y       =    B(0) +    b(1)  *    x
 va<-predict(var,newdata = trees)
 va
-
-
-
-
-
 vart<-t.test(trees$Girth ~ trees$Height)
 vart
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #data("rock")
 #rock[rock$perm==84.2&rock$peri>4000&rock$area<11111,]
 
